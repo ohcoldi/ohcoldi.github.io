@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Следующий мета тег "viewport" очень важен для правильного отображения "отзывчивых сайтов" на разных устройствах.
+      Браузеры хотят быть очень услужливыми и пытатться помочь нам, отображая сайты совсем не так, как нужно.
+      Совсем как "Двое из ларца"
+
+      Например - попытаться отобразить всю страницу разом, хотя она должна прокручиваться на 10 экранов,
+      или увеличить шрифт непонятным образом, когда мы переворачиваем телефон горизонтально 
+      1. width=device-with - говорит браузеру "дружище, ширина моей страницы ровно такая, какой ширины твой экран.
+      Не надо ничего подгонять, я сам этим займусь"
+      2. initial-scale=1 - говорит браузеру "не вздумай ничего приближать/отдалять по своему усмотрению, я сам
+      озабочусь тем, чтобы при разной ширине всё отображалось хорошо"
+
+      https://www.w3schools.com/css/css_rwd_viewport.asp
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+       <!--
+    Тайтл отобржается как название закладки в барузере
+    -->
+    <title>QA</title>
+    <link rel="icon" href="./logo.ico" type="image/x-icon" sizes="any" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <section class="data">
+         <div class="foto">
+            <div class="ramka-1">
+               <!-- Рамка для фото -->
+               <img src="./foto.png" alt="Фотография">
+            </div>
+         </div>
+         
+         <div class="block">
+         <div class="name">DIANA DEYANOVA</div>
+        
+      </section>
+   </div>
+
+
+   <div>      
+           
+    <audio id="player" src="./mu.mp3" autoplay loop></audio>
+    <div>
+      <button onclick="document.getElementById('player').play()">Воспроизведение</button>
+      <button onclick="document.getElementById('player').pause()">Пауза</button>
+      <button onclick="document.getElementById('player').volume+=0.1">Громкость +</button>
+      <button onclick="document.getElementById('player').volume-=0.1">Громкость -</button>
+    </div> 
+
+
+
+
+    <div class="block">
+      <div class="block-title">social network</div>
+      <div class="block-entries">
+        <div class="entry">
+          <a href="http://t.me/ohcoldi" target="_blank"> telegram</a>
+        </div>
+        <div class="entry">
+          <a href="https://github.com/ohcoldi" target="_blank">git</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">hobbies</div>
+      <div class="entry">
+        <a> Hello, I'm a manual tester.</a></div>
+        <div class="entry"><a>I like to ride a bike, as well as watch series on Netflix.
+          You can write to me on Telegram </a>
+      </div>
+    </div>
+  </body>
+</html>
